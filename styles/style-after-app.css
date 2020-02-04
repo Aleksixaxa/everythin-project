@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align:center;
+    background: url('../imgs/sunrise.jpg');
+    color: white;
+    margin: 0em;
+}
+/*top screen*/
+.top-page {
+    border-bottom: solid 1px
+}
+.top-page p {
+    padding: .1em;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+#current-time {font-size: 7rem; margin-top:.6em;}
+#current-date {font-size: 3rem;}
+#current-day {font-size: 2rem;}
+#current-temperature {font-size: 2em;}
+
+
+/*bottom part of the screen*/
+.bottom-center-page {
+    margin-top: 20px
+}
+.bottom-center-page nav {
+    padding: 13px 0px
+}
+.bottom-center-page nav a {
+    padding-right: .7em;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    
+}
