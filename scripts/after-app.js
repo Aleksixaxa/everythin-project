@@ -33,7 +33,12 @@ function time() {
     } else if (date.getDay() == 1) {
         currentDay.innerHTML = 'Monday';
     }
+    // if (date.getMinutes() == 1 || 2 || 3 || 4 || 5 || 6) {
+    //     '0' + date.getMinutes().slice(-2);
+    // };
 };
+
+
 // *Display Weather =>
 
 fetch(weatherApi)
