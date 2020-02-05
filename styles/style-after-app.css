@@ -9,7 +9,7 @@ body {
 }
 /*top screen*/
 .top-page {
-    border-bottom: solid 1px
+  
 }
 .top-page p {
     padding: .1em;
@@ -17,7 +17,7 @@ body {
     margin-top: 0px;
 }
 
-#current-time {font-size: 7rem; margin-top:.6em;}
+#current-time {font-size: 7rem; margin-top:.6em; font-weight: bold;}
 #current-date {font-size: 3rem;}
 #current-day {font-size: 2rem;}
 #current-temperature {font-size: 2em;}
@@ -25,15 +25,23 @@ body {
 
 /*bottom part of the screen*/
 .bottom-center-page {
-    margin-top: 20px
+    margin-top: 135px
 }
 .bottom-center-page nav {
-    padding: 13px 0px
+    padding: 13px 0px;
+    font-size: 1.7rem;
+    border-bottom: solid 1px;
 }
 .bottom-center-page nav a {
     padding-right: .7em;
     text-decoration: none;
     font-weight: bold;
     color: white;
-    
+}
+.bottom-center-page nav a:hover {
+    color: rgb(88, 17, 253);
+    transition: all 0.7s;
+}
+.things-to-come {
+    font-size: 1.6rem;
 }
