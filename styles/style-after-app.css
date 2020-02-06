@@ -16,7 +16,7 @@ body {
     margin-bottom: 0px;
     margin-top: 0px;
 }
-
+/*currents*/
 #current-time {font-size: 7rem; margin-top:.6em; font-weight: bold;}
 #current-date {font-size: 3rem;}
 #current-day {font-size: 2rem;}
