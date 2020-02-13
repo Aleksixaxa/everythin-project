@@ -35,13 +35,14 @@ function time() {
     } else if (date.getDay() == 6) {
         currentDay.innerHTML = 'Saturday';
         untilWeekend.innerHTML = 'zerooo';// days until weekend
-    } else if (date.getDay() == 7) {
+    } else if (date.getDay() == 0) {
         currentDay.innerHTML = 'Sunday';
         untilWeekend.innerHTML = 'zeeeerro';// days until weekend
     } else if (date.getDay() == 1) {
         currentDay.innerHTML = 'Monday';
         untilWeekend.innerHTML = '4...';// days until weekend
     }
+
     // ?clock shows xx.1 not xx.01
 //     if (date.getMinutes() == 4) {
 //         '0' + date.getMinutes()
@@ -66,7 +67,7 @@ fetch(weatherApi)
 setInterval( () => {
     let countDownDate  = new Date("Feb 12, 2020").getTime();
     let now = new Date().getTime();
-    let untilExam = countDownDate - now
+    let untilExam = countDownDate - now;
     let days = Math.floor(untilExam / (1000 * 60 * 60 * 24));
     let nextExam = document.querySelector('#next-exam');
     //displaying days until 
@@ -82,10 +83,19 @@ setInterval( () => {
 }, 1000);//1sec refresh on time
 
 setInterval( () => {
-    let countDownDate = new Date("feb 12, 2020").getTime();
+    let countDownDate = new Date("Feb 13, 2020 14:50:00").getTime();
     let now = new Date().getTime();
+    let untilWeSee = countDownDate - now;
+    
+    let days = Math.floor(untilWeSee / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((untilWeSee % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((untilWeSee % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((untilWeSee % (1000 * 60)) / 1000);
+    
+    let weSee = document.querySelector('.until-we-see');
+    let x = `${days * 24 + hours}h ${minutes}m ${seconds}s until we see again!`;
+    weSee.innerHTML = x;
 
-    console.log(countDownDate)
 }, 1000);
 
 
